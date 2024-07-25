@@ -156,7 +156,7 @@ main h2 {
 }
 
 .cta button {
-    background: #333;
+    background:#007bff;
     color: #fff;
     padding: 1rem;
     margin: 0.5rem;
@@ -165,7 +165,7 @@ main h2 {
 }
 
 .cta button:hover {
-    background: #555;
+    background: #28a745;
 }
 
 .intro, .posts, .search-box {
@@ -972,7 +972,6 @@ button:hover {
     background-color: #28a745; 
 }
 
-
 /*footer*/
 
 footer {
@@ -996,9 +995,6 @@ footer .container {
     justify-content: space-between;
     align-items: flex-start;
 }
-
-
-
 .footer-section {
     flex: 1 1 300px; 
     margin-bottom: 20px;
@@ -1115,10 +1111,8 @@ body {
 header {
     background-color: var(--primary-color);
 }
-
-/* Button Styles */
 button {
-background-color: #007bff; /* Blue color */
+background-color: #007bff; 
 color: white;
 border: none;
 padding: 15px 30px;
@@ -1128,14 +1122,135 @@ transition: background-color 0.3s ease;
 }
 
 button:hover {
-background-color: #28a745; /* Green color on hover */
+background-color: #28a745;
 }
-@media (max-width: 600px) {
-    .header-container {
+@media screen and (max-width: 768px) {
+    nav ul {
         flex-direction: column;
+        text-align: center;
     }
-    
-    .article-grid, .post-grid {
+
+    .header-container, .container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .article, .post {
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .schedule, .plan-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class-card, .plan {
+        flex-basis: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .nutrition-content ul li {
+        font-size: 1rem;
+    }
+
+    .our-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        max-width: 100%;
+    }
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-logo {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    footer .social-links {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    footer .quick-links {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 480px) {
+    header .logo span {
+        font-size: 1rem;
+    }
+
+    header .language-switcher label {
+        font-size: 0.8rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem;
+    }
+
+    .article-content h2, .our-values ul li {
+        font-size: 1.2rem;
+    }
+
+    .nutrition-content p {
+        font-size: 1rem;
+    }
+
+    .search-box h2, .schedule h2, .about-description h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-box #search-input {
+        width: 200px;
+    }
+
+    .plan h2, .class-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .class-card p, .about-description p {
+        font-size: 0.9rem;
+    }
+
+    .cta button {
+        padding: 0.8rem;
+        margin: 0.3rem;
+    }
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-logo {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    footer .social-links {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    footer .quick-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
