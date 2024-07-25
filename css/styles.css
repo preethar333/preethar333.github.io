@@ -85,6 +85,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: space-around;
+    background-color: #007bff;
 }
 
 nav ul li {
@@ -95,10 +96,12 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    display: block;
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #0056b3;
 }
 
 main {
@@ -584,6 +587,392 @@ iframe {
     border: none;
 }
 
+/*workout program*/
+
+main {
+    padding: 20px;
+}
+
+.workout-programs {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.workout-programs h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.workout-routine {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.workout-routine h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.workout-routine p {
+    margin-bottom: 10px;
+}
+
+.workout-routine .media {
+    display: flex;
+    gap: 20px;
+}
+
+.workout-routine img,
+.workout-routine video {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.workout-routine a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.workout-routine a:hover {
+    text-decoration: underline;
+}
+.workout-programs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.workout-programs h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.workout-routine {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.workout-routine h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.workout-routine .video {
+    margin-bottom: 10px;
+}
+
+.workout-routine p {
+    margin-bottom: 10px;
+}
+
+/*virtual class*/
+.virtual-classes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.virtual-classes h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.timetable {
+    margin-bottom: 40px;
+}
+
+.timetable h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.timetable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th, .timetable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.timetable th {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.timetable a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.timetable a:hover {
+    text-decoration: underline;
+}
+
+.class-descriptions {
+    margin-bottom: 40px;
+}
+
+.class-descriptions h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.class {
+    margin-bottom: 20px;
+}
+
+.class h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.class p {
+    margin-bottom: 10px;
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+}
+
+.instructor img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.recorded-sessions {
+    margin-bottom: 40px;
+}
+
+.recorded-sessions h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.session {
+    margin-bottom: 20px;
+}
+
+.session h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.session video {
+    width: 100%;
+    border-radius: 5px;
+}
+/*success stories*/
+.success-stories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.success-stories h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.transformations,
+.before-after,
+.testimonies {
+    margin-bottom: 40px;
+}
+
+.transformations h2,
+.before-after h2,
+.testimonies h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.video,
+.testimony {
+    margin-bottom: 20px;
+}
+
+.video h3,
+.testimony h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.video video,
+.testimony video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.before-after .image-pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.before-after .image-pair img {
+    width: 48%;
+    border-radius: 5px;
+}
+.success-stories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.success-stories h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.transformations, .testimonies, .before-after {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.transformations h2, .testimonies h2, .before-after h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.video, .testimony {
+    margin-bottom: 20px;
+}
+
+.image-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-pair img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.image-pair p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+/*tools-tracker*/
+.tools-trackers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tools-trackers h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.progress-logs,
+.health-calculators,
+.apps-trackers {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.progress-logs h2,
+.health-calculators h2,
+.apps-trackers h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.log,
+.calculator,
+.app {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.log h3,
+.calculator h3,
+.app h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.log p,
+.calculator p,
+.app p {
+    margin-bottom: 10px;
+}
+
+.log a,
+.calculator a,
+.app a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.log a:hover,
+.calculator a:hover,
+.app a:hover {
+    text-decoration: underline;
+}
+.log textarea{
+    padding: 10px 30px;
+}
+.log input{
+    padding: 10px 30px;
+}
+.calculator input{
+    padding: 10px 30px;
+}
+.calculator select{
+    padding: 10px 30px;
+}
+button {
+    background-color: #007bff; 
+    color: white;
+    border:#007bff;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #28a745; 
+}
+
+
 /*footer*/
 
 footer {
@@ -600,6 +989,17 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+}
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content > div {
+    flex: 1;
+    margin: 10px;
 }
 
 .footer-section {
@@ -671,7 +1071,7 @@ button[type="submit"]:hover {
 #subscriptionStatus {
     margin-top: 5px;
     font-size: 0.9rem;
-    color: #28a745; /* Green color for subscription status */
+    color: #28a745; 
 }
 
 .footer-section-quick-links a {
@@ -684,7 +1084,7 @@ button[type="submit"]:hover {
 }
 
 .footer-section.logo {
-    flex: 1 1 200px; /* Adjust width as needed */
+    flex: 1 1 200px; 
     text-align: center;
 }
 
@@ -704,4 +1104,45 @@ button[type="submit"]:hover {
 .footer-bottom p {
     font-size: 0.8rem;
     color: #666;
+}
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #007bff;
+    --text-color: #343a40;
+}
+
+body {
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+.footer-content > div {
+    margin: 10px 0;
+}
+
+/* Button Styles */
+button {
+background-color: #007bff; /* Blue color */
+color: white;
+border: none;
+padding: 15px 30px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #28a745; /* Green color on hover */
+}
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .article-grid, .post-grid {
+        flex-direction: column;
+    }
 }

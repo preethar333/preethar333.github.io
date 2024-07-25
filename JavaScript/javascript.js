@@ -133,3 +133,83 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//toos
+// Function to log weight
+function logWeight() {
+    const weight = document.getElementById('weight').value;
+    if (weight) {
+        const weightLog = document.getElementById('weight-log');
+        const logItem = document.createElement('li');
+        logItem.textContent = `Weight: ${weight} kg`;
+        weightLog.appendChild(logItem);
+    }
+}
+
+// Function to log workouts
+function logWorkout() {
+    const workout = document.getElementById('workout').value;
+    if (workout) {
+        const workoutLog = document.getElementById('workout-log');
+        const logItem = document.createElement('li');
+        logItem.textContent = `Workout: ${workout}`;
+        workoutLog.appendChild(logItem);
+    }
+}
+
+// Function to log nutrition
+function logNutrition() {
+    const nutrition = document.getElementById('nutrition').value;
+    if (nutrition) {
+        const nutritionLog = document.getElementById('nutrition-log');
+        const logItem = document.createElement('li');
+        logItem.textContent = `Nutrition: ${nutrition}`;
+        nutritionLog.appendChild(logItem);
+    }
+}
+
+// Function to calculate BMI
+function calculateBMI() {
+    const weight = document.getElementById('bmi-weight').value;
+    const height = document.getElementById('bmi-height').value / 100;
+    if (weight && height) {
+        const bmi = (weight / (height * height)).toFixed(2);
+        document.getElementById('bmi-result').textContent = `Your BMI is ${bmi}`;
+    }
+}
+
+// Function to calculate calories
+function calculateCalories() {
+    const weight = document.getElementById('cal-weight').value;
+    const height = document.getElementById('cal-height').value;
+    const age = document.getElementById('cal-age').value;
+    const gender = document.getElementById('cal-gender').value;
+    let bmr;
+
+    if (weight && height && age && gender) {
+        if (gender === 'male') {
+            bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+        } else {
+            bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+        }
+
+        document.getElementById('cal-result').textContent = `Your daily caloric needs are ${Math.round(bmr)} calories`;
+    }
+}
+
+// Function to calculate heart rate
+function calculateHeartRate() {
+    const age = document.getElementById('hr-age').value;
+    if (age) {
+        const maxHeartRate = 220 - age;
+        const heartRateZones = {
+            'Moderate Intensity': `${Math.round(maxHeartRate * 0.5)} - ${Math.round(maxHeartRate * 0.7)} bpm`,
+            'Vigorous Intensity': `${Math.round(maxHeartRate * 0.7)} - ${Math.round(maxHeartRate * 0.85)} bpm`
+        };
+
+        document.getElementById('hr-result').innerHTML = `
+            Max Heart Rate: ${maxHeartRate} bpm<br>
+            Moderate Intensity: ${heartRateZones['Moderate Intensity']}<br>
+            Vigorous Intensity: ${heartRateZones['Vigorous Intensity']}
+        `;
+    }
+}

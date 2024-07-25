@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools & Trackers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,fr,de,it,zh-CN,pa,hi,te,ml,gu'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Health and Fitness Hub Logo">
+                <span>Health and Fitness Hub</span>
+            </div>
+            <div id="google_translate_element" class="language-switcher"></div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fitness_articles.html">Fitness Articles</a></li>
+            <li><a href="nutrition_resources.html">Nutrition Resources</a></li>
+            <li><a href="workout-programs.html">Workout Programs</a></li>
+            <li><a href="virtual-classes.html">Virtual Classes</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="tools-trackers.html">Tools & Tracker</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="tools-trackers">
+            <h1>Tools & Trackers</h1>
+    
+            <!-- Progress Logs -->
+            <article class="progress-logs">
+                <h2>Progress Logs</h2>
+                <div class="log">
+                    <h3>Weight Log</h3>
+                    <p>Track your weight over time to monitor your progress.</p>
+                    <input type="number" id="weight" placeholder="Enter your weight">
+                    <button onclick="logWeight()">Log Your Weight</button>
+                    <ul id="weight-log"></ul>
+                </div>
+                <div class="log">
+                    <h3>Workout Log</h3>
+                    <p>Keep a detailed record of your workouts to see your improvements.</p>
+                    <textarea id="workout" placeholder="Enter your workout details"></textarea>
+                    <button onclick="logWorkout()">Log Your Workouts</button>
+                    <ul id="workout-log"></ul>
+                </div>
+                <div class="log">
+                    <h3>Nutrition Log</h3>
+                    <p>Record your daily nutrition intake to stay on track with your diet.</p>
+                    <textarea id="nutrition" placeholder="Enter your nutrition details"></textarea>
+                    <button onclick="logNutrition()">Log Your Nutrition</button>
+                    <ul id="nutrition-log"></ul>
+                </div>
+            </article>
+    
+            <!-- Health Calculators -->
+            <article class="health-calculators">
+                <h2>Health Calculators</h2>
+                <div class="calculator">
+                    <h3>BMI Calculator</h3>
+                    <p>Calculate your Body Mass Index to understand your weight category.</p>
+                    <input type="number" id="bmi-weight" placeholder="Weight (kg)">
+                    <input type="number" id="bmi-height" placeholder="Height (cm)">
+                    <button onclick="calculateBMI()">Calculate BMI</button>
+                    <p id="bmi-result"></p>
+                </div>
+                <div class="calculator">
+                    <h3>Calorie Calculator</h3>
+                    <p>Estimate the number of calories you need to maintain or lose weight.</p>
+                    <input type="number" id="cal-weight" placeholder="Weight (kg)">
+                    <input type="number" id="cal-height" placeholder="Height (cm)">
+                    <input type="number" id="cal-age" placeholder="Age (years)">
+                    <select id="cal-gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <button onclick="calculateCalories()">Calculate Calories</button>
+                    <p id="cal-result"></p>
+                </div>
+                <div class="calculator">
+                    <h3>Heart Rate Calculator</h3>
+                    <p>Determine your optimal heart rate zones for different levels of exercise.</p>
+                    <input type="number" id="hr-age" placeholder="Age (years)">
+                    <button onclick="calculateHeartRate()">Calculate Heart Rate</button>
+                    <p id="hr-result"></p>
+                </div>
+            </article>
+    
+            <!-- Apps and Fitness Trackers -->
+            <article class="apps-trackers">
+                <h2>Apps and Fitness Trackers</h2>
+                <div class="app">
+                    <h3>Fitness App</h3>
+                    <p>Use our app to track your fitness goals and progress.</p>
+                    <a href="https://www.trainerize.com/sign-up/?cid=21195850689&agid=160788142026&creativeid=696980841526&keyword=
+                    fitness%20app&matchtype=e&utm_term=fitness%20app&utm_campaign=nb-match&utm_source=google&utm_medium=ppc&hsa_acc=
+                    5453271483&hsa_cam=21195850689&hsa_grp=160788142026&hsa_ad=696980841526&hsa_src=g&hsa_tgt=kwd-13878180968&hsa_kw=
+                    fitness%20app&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwqf20BhBwEiwAt7dtdWaCc2sNLXYyVDSv0MyP
+                    35CzPFZfJnrhnxO9NYXYvEEKcf21FlMCiRoCsxwQAvD_BwE">Download the App</a>
+                </div>
+                <div class="app">
+                    <h3>Nutrition Tracker</h3>
+                    <p>Keep track of your dietary intake with our easy-to-use tracker.</p>
+                    <a href="https://www.myfitnesspal.com/">Download the Tracker</a>
+                </div>
+                <div class="app">
+                    <h3>Workout Timer</h3>
+                    <p>Stay on top of your workouts with our interval timer app.</p>
+                    <a href="https://exercisetimer.net/interval-timer">Online Interval Timer</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section-contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Email: contact@healthandfitnesshub.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Fitness St, Healthy City, HC 12345</p>
+                </div>
+                <div class="footer-section-social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.twitter.com">Twitter</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+                </div>
+                <div class="footer-section-newsletter">
+                    <h3>Newsletter</h3>
+                    <form id="newsletterForm">
+                        <input type="email" id="emailInput" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p id="subscriptionStatus"></p>
+                </div>
+                <div class="footer-section-quick-links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home |</a>&nbsp;
+                    <a href="about.html">About Us |</a>&nbsp;
+                    <a href="contact.html">Contact Us |</a>&nbsp;
+                    <a href="#">Privacy Policy |</a>&nbsp;
+                    <a href="#">Terms of Service</a>&nbsp;
+                </div>
+                <div class="footer-section logo">
+                    <img src="images/logo.png" alt="Health and Fitness Hub">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Health and Fitness Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JavaScript/javascript.js"></script>
+</body>
+
+</html>
