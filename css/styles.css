@@ -1241,6 +1241,7 @@ background-color: #28a745;
     footer .footer-logo {
         justify-content: center;
         margin-bottom: 1rem;
+        align-items: center;
     }
 
     footer .social-links {
